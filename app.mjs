@@ -1,5 +1,5 @@
-const HTTP1HOST = 'http://127.0.0.1:8080';
-const HTTP2HOST = 'http://127.0.0.1:8080';
+const HTTP1HOST = 'https://esmtest.myshov.com:443';
+const HTTP2HOST = 'https://esmtest.myshov.com:444';
 
 function loadScript(uri) {
     var scriptElement = document.createElement('script');
