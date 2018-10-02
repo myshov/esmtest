@@ -7,25 +7,14 @@ const ITERATIONS_NUM = letters.length;
 let htmlContent = '';
 
 for (let i = 1; i <= ITERATIONS_NUM; i++) {
-    const nextI = i + 1;
-    const nextName = `${PREFIX + nextI}`;
     const currentName = `${PREFIX + i}`;
     const char = letters[i - 1];
     const content =
-        `import './${nextName}.mjs';\n` + 
         `const el = document.getElementById('${currentName}');\n` +
-        `el.innerText = '${char}';\n`;
-    const lastContent =
-        `const el = document.getElementById('${currentName}');\n` +
-        `el.innerText = '${char}...';\n`;
+        `el.innerText = '${char}${(i === ITERATIONS_NUM) ? '...' : ''}';\n`;
     htmlContent += `<span id="${currentName}"></span>`;
-    
 
-    if (i !== ITERATIONS_NUM) {
-        fs.writeFileSync(path.join('modules', `${currentName}.mjs`), content);
-    } else {
-        fs.writeFileSync(path.join('modules', `${currentName}.mjs`), lastContent);
-    }
+    fs.writeFileSync(path.join('modules', `${currentName}.mjs`), content);
 }
 
 fs.writeFileSync('htmlContent.html', htmlContent);
