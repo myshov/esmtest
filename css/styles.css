@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 main {
@@ -15,10 +16,15 @@ main {
 
 h1 {
     font-size: 3.4em;
+    margin: 0px;
 }
 
 h3 {
     color: chocolate;
+}
+
+.description {
+    margin-top: 30px;
 }
 
 .sentence {
@@ -36,6 +42,7 @@ button {
     line-height: 30px;
     padding: 0 20px;
     background-color: white;
+    margin: 0;
 }
 
 footer {
