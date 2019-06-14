@@ -1,0 +1,53 @@
+* {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    max-width: 800px;
+    min-height: 610px;
+}
+
+h1 {
+    font-size: 3.4em;
+}
+
+h3 {
+    color: chocolate;
+}
+
+.sentence {
+    font-style: italic;
+}
+
+section {
+    margin-top: 50px;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+
+footer {
+    margin-top: 50px;
+    max-width: 800px;
+    width: 100%;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: .8em;
+    margin: 7px 0;
+}
