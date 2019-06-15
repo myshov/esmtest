@@ -2,7 +2,7 @@
 
 [Demo](https://esmtest.myshov.com)
 
-This experiment loads every character of the first sentence of "Crime and Punishment" by F.M. Dostoevsky with separate mjs-file (100 files in total). It shows real advantage using HTTP/2 against HTTP/1.1. For more striking experience load this site on your mobile device with 3G or just use throttling on network tab in developer tools of your browser.
+This experiment loads every character of the first sentence of "Crime and Punishment" by F.M. Dostoevsky with separate mjs-file (100 files in total). It shows real advantage using HTTP/2 against HTTP/1.1. For more striking experience load this site on your mobile device with 3G or just use throttling on network tab in developer tools of your browser. For the most reliable results use an option "Disable cache" on the network tab in developer tools.
 
 ## License
 
